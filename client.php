@@ -3,6 +3,7 @@
  
  $handle    = fopen($filename, "r");
  $image      = fread($handle, filesize($filename));
+ fclose($handler); // to save resources
 
  
  $postData = array(
